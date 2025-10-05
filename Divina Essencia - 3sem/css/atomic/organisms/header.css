@@ -1,0 +1,76 @@
+/* ========================================================= */
+/* LAYOUT GLOBAL: Centralização de toda a página (DESKTOP) */
+/* (Este bloco centraliza todo o seu conteúdo, se você estiver usando a div .l-container no HTML) */
+.l-container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    width: 90%;        
+    margin: 0 auto;    /* Centraliza o contêiner na horizontal */
+    padding: 0 15px;
+}
+/* ========================================================= */
+
+
+/* ORGANISMO: Estilos do Header (DESKTOP) */
+.o-header {
+    background: #FCF8FF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.o-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Ajustei o padding para 0 horizontalmente, pois o .l-container já faz isso */
+    padding: 12px 0; 
+}
+
+/* ÁTOMO: Logo (DESKTOP) */
+.a-logo img {
+    height: 100px;
+    /* Atenção: mantenha esta margem se você realmente a deseja no desktop, 
+       mas ela será anulada no mobile abaixo. */
+    margin-left: 150px; 
+}
+
+
+/* ========================================================= */
+/* RESPONSIVIDADE (MOBILE) */
+/* ========================================================= */
+
+@media (max-width: 576px) {
+    
+    /* ORGANISMO: Configura o empilhamento e centralização geral no mobile */
+    .o-header__top {
+        flex-direction: column;      /* Empilha Logo, Busca, Ícones */
+        align-items: center;         /* Centraliza todos os itens na coluna */
+        padding: 10px 15px;          
+        gap: 15px;                   
+    }
+
+    /* Ajuste da Logo (MOBILE) */
+    .a-logo {
+        width: 100%;                 
+        text-align: center;          
+    }
+
+    .a-logo img {
+        height: 60px;                
+        margin-left: 0 !important;   /* Anula a margem de desktop para permitir a centralização */
+    }
+
+    /* MOLÉCULA: Campo de Busca (MOBILE) */
+    .m-search {
+        width: 90%;                  
+        max-width: 100%;             
+        margin: 0 auto;              /* Centraliza o bloco m-search */
+    }
+    
+    /* MOLÉCULA: Ícones do Usuário (MOBILE) */
+    .m-user-options {
+        display: flex;              
+        width: 90%;                 
+        justify-content: center;    /* Centraliza os ícones DENTRO do contêiner */
+        margin: 0 auto;             /* Centraliza o bloco m-user-options */
+        gap: 25px;                  
+    }
+}

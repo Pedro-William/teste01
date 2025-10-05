@@ -1,0 +1,14 @@
+.form-group select {
+    width: calc(30% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,...');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}

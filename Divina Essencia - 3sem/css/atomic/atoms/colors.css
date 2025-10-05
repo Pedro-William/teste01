@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    background-color: #f1eef3;
+}
+
+.button-group button {
+    background-color: #bfafe0;
+    color: white;
+}
+
+.button-group button:hover {
+    background-color: #a89bd0;
+}
+
+.header-nav a {
+    color: #555;
+}
+
+.header-nav span {
+    color: #888;
+}
+
+.form-group label {
+    color: #333;
+}
+
+.password-toggle {
+    color: #999;
+}
+
+.checkbox-group label {
+    color: #555;
+}

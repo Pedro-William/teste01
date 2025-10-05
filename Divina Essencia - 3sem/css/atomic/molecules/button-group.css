@@ -1,0 +1,35 @@
+.button-group {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  
+  .button-group button {
+    background-color: #bfafe0;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #a89bd0;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .button-group {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .button-group button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

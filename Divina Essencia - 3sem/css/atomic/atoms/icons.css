@@ -1,0 +1,24 @@
+.a-icon {
+  font-size: 1.8rem; /* maior que antes */
+  margin-left: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.m-search .a-btn i {
+  font-size: 1.2rem; /* lupa menor que os outros ícones */
+  color: #8a5b9e;
+  
+}
+
+
+/* atoms/_icon.css */
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #8a5b9e;
+  pointer-events: none;
+}

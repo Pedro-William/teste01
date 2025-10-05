@@ -1,0 +1,55 @@
+.m-menu {
+  background: #EEE4F4;
+  padding: 8px 0;
+}
+
+.m-menu__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+    /* M-MENU: Define a altura e o ponto de referência */
+    .m-menu {
+      display: flex
+      aling-items: center;
+      position: relative; 
+      padding: 15px 0; 
+    }
+
+    /* FORÇA O BOTÃO A APARECER e CENTRALIZAR-SE no mobile */
+    .m-menu > .a-hamburger-btn {
+        /* Garante que o botão apareça, anulando qualquer display: none */
+        display: block !important; 
+        
+        /* O resto do estilo de centralização (top:0, bottom:0, etc.)
+           está no CSS do .a-hamburger-btn fora do @media e funcionará aqui. */
+        z-index: 100;
+    }
+    
+    /* ESCONDE a lista de links por padrão no mobile */
+    .m-menu__list {
+        display: none; 
+        /* ... (restante do CSS de menu drop-down) ... */
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background: inherit; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+    
+    /* MOSTRA a lista de links quando a classe is-open está ativa */
+    .m-menu__list.is-open {
+        display: flex; 
+    }
+}

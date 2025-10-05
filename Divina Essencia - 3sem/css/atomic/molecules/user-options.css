@@ -1,0 +1,12 @@
+.m-user-options {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.m-user-options .a-icon {
+  font-size: 1.8rem;       /* todos do mesmo tamanho */
+  color: #000;          /* cor consistente */
+  cursor: pointer;
+}
+
